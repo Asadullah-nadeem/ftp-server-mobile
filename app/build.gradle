@@ -47,5 +47,11 @@ dependencies {
 
     implementation libs.library
     implementation libs.option
+    implementation libs.ftpserver.core
+//    implementation(libs.ftpserver.listeners)
+
+    implementation(libs.core) {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
 
 }
